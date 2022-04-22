@@ -115,7 +115,7 @@ input.onGesture(Gesture.Shake, function () {
     player1 = 0
     player2 = 0
     if (player1_pontok == 1) {
-        basic.showString("P1-0+1")
+        basic.showString("P1-1")
         player1_pontok += 0.5
     }
     if (player1_pontok == 2) {
@@ -123,40 +123,43 @@ input.onGesture(Gesture.Shake, function () {
         player1_pontok += 0.5
     }
     if (player1_pontok == 3) {
-        basic.showString("P1-2+1")
+        basic.showString("P1-3")
         player1_pontok += 0.5
     }
     if (player1_pontok == 4) {
-        basic.showString("P1-3+1")
+        basic.showString("P1-4")
         player1_pontok += 0.5
     }
     if (player1_pontok == 5) {
         basic.showString("P1 Win!")
+        music.playMelody("C C G G A A G - ", 120)
     }
     if (player2_pontok == 1) {
-        basic.showString("P2-0+1")
+        basic.showString("P2-1")
         player2_pontok += 0.5
     }
     if (player2_pontok == 2) {
-        basic.showString("P2-1+1")
+        basic.showString("P2-2")
         player2_pontok += 0.5
     }
     if (player2_pontok == 3) {
-        basic.showString("P2-2+1")
+        basic.showString("P2-3")
         player2_pontok += 0.5
     }
     if (player2_pontok == 4) {
-        basic.showString("P2-3+1")
+        basic.showString("P2-4")
         player2_pontok += 0.5
     }
     if (player2_pontok == 5) {
         basic.showString("P2 Win!")
+        music.playMelody("C C G G A A G - ", 120)
     }
 })
 let player2 = 0
 let player1 = 0
 let player2_pontok = 0
 let player1_pontok = 0
+music.playMelody("G G G G C - - - ", 120)
 player1_pontok = 0.5
 player2_pontok = 0.5
 basic.forever(function () {
